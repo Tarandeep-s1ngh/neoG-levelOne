@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('/assets/background2.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: slateblue;
+    padding: 0.2rem;
+}
+
+a:hover {
+    background-color: rgb(228, 228, 228);
+    border-radius: 7%;
+}
+
+i {
+    padding: 0.2rem;
+    padding-right: 1rem;
+}
+
+i:hover {
+    background-color: rgb(228, 228, 228);
+    border-radius: 50%;
+}
+
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    color: black;
+}
+
+/* ||||||| first card */
+
+.card-basic {
+    background: white;
+    flex-basis: 350px;
+    border-radius: 5px;
+    margin: 1rem 0;
+}
+
+.card-basic:hover {
+    cursor: pointer;
+}
+
+.crd-header {
+    display: flex;
+    flex-flow: column wrap;
+    text-align: left;
+}
+
+.img1 {
+    background-image: url('/assets/minato.jpeg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 202px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.card-header-txt {
+    padding-left: 1rem;
+}
+
+.card-header-txt:hover {
+    background-color: rgb(228, 228, 228);
+}
+
+.card-header-txt h3{
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+}
+
+.card-footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 0 1rem 0.5rem 1rem;
+}
+
+/* ||||||| second card */
+
+.card-txt-up {
+    background: white;
+    flex-basis: 350px;
+    border-radius: 5px;
+    margin: 1rem 0;
+    height: 100%;
+}
+
+.header-txt-img {
+    padding: 8rem 0 0 1rem;
+    color: white;
+}
+
+.header-txt-img h3 {
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+}
+
+/* ||||||| third card */
+
+.card-header {
+    background: white;
+    flex-basis: 350px;
+    margin: 1rem 0;
+    border-radius: 5px;
+}
+
+.header-above {
+    padding-left: 1rem;
+}
+
+.header-above h3 {
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+}
+
+.img2 {
+    margin-top: 0.5rem;
+    background-image: url('/assets/minato.jpeg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 202px;
+}
+
+/* ||||||| forth card */
+
+.card-btn {
+    background: white;
+    flex-basis: 350px;
+    margin: 1rem 0;
+    border-radius: 5px;
+}
+
+/* ||||||| fifth card */
+
+.card-icon {
+    background: white;
+    flex-basis: 350px;
+    margin: 1rem 0;
+    border-radius: 5px;
+}
+
+.card-icon > .card-footer {
+    margin-left: 60%;
+}
+
+/* ||||||| sixth card */
+
+.card-img-txt {
+    background: white;
+    flex-basis: 350px;
+    margin: 1rem 0;
+    border-radius: 5px;
+    height: 120px;
+}
+
+.card-img-txt > .crd-header {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.card-img-txt > .crd-header > .img1 {
+    background-image: url('/assets/minato.jpeg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 40%;
+    height: 91.8px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
