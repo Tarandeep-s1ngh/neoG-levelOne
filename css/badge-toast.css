@@ -1,0 +1,39 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    padding: 1rem;
+}
+
+.message {
+    margin-right: 4rem;
+}
+
+.notification {
+    position: relative;
+    bottom: 48px;
+    right: 88px;
+}
+
+.notification2 {
+    position: relative;
+    bottom: 26px;
+    right: 28px;
+}
+
+#h2toast {
+    margin-top: 5rem;
+}
+
+article {
+    margin: 2rem 5rem 0;
+    padding: 1rem;
+    background: lightcyan;
+}
+
+.toast {
+    position: relative;
+    background: lightgreen;
+    max-width: 400px;
+    bottom: 36px;
+    left: 30px;
+}
