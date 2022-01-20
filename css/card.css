@@ -62,7 +62,7 @@ i:hover {
 .img1 {
     background-image: url('/assets/minato.jpeg');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     width: 100%;
     height: 202px;
     border-top-right-radius: 5px;
@@ -131,7 +131,7 @@ i:hover {
     margin-top: 0.5rem;
     background-image: url('/assets/minato.jpeg');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     width: 100%;
     height: 202px;
 }
@@ -176,7 +176,7 @@ i:hover {
 .card-img-txt > .crd-header > .img1 {
     background-image: url('/assets/minato.jpeg');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     width: 40%;
     height: 91.8px;
     border-top-right-radius: 5px;
