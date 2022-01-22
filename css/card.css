@@ -157,6 +157,10 @@ i:hover {
     border-radius: 5px;
 }
 
+.card-btn > .card-footer > .crd-icon {
+    display: none;
+}
+
 .card-btn:hover {
     cursor: pointer;
 }
@@ -175,6 +179,10 @@ i:hover {
 
 .card-icon > .card-footer {
     margin-left: auto;
+}
+
+.card-icon .crd-btn {
+    display: none;
 }
 
 .card-icon:hover {
@@ -207,8 +215,12 @@ i:hover {
     border-top-left-radius: 5px;
 }
 
+.card-img-txt .card-description {
+    display: none;
+}
+
 .card-img-txt > .card-footer {
-    margin-top: 1em;
+    margin-top: 0.5em;
 }
 
 .card-img-txt:hover {
