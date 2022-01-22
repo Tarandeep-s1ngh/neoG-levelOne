@@ -25,7 +25,7 @@ a:hover {
 
 i {
     padding: 0.2rem;
-    padding-right: 1rem;
+    margin-right: 1rem;
 }
 
 i:hover {
@@ -87,7 +87,7 @@ i:hover {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    padding: 0 1rem 0.5rem 1rem;
+    padding: 0 0 0.5rem 1rem;
 }
 
 /* ||||||| second card */
@@ -98,7 +98,7 @@ i:hover {
     border-radius: 5px;
     margin: 1rem 0;
     box-shadow: 10px 10px 20px #141414;
-    height: 100%;
+    align-self: flex-start;
 }
 
 .header-txt-img {
@@ -109,6 +109,10 @@ i:hover {
 .header-txt-img h3 {
     margin-top: 0.5rem;
     margin-bottom: 0;
+}
+
+.card-txt-up:hover {
+    cursor: pointer;
 }
 
 /* ||||||| third card */
@@ -139,6 +143,10 @@ i:hover {
     height: 202px;
 }
 
+.card-header:hover {
+    cursor: pointer;
+}
+
 /* ||||||| forth card */
 
 .card-btn {
@@ -149,6 +157,10 @@ i:hover {
     border-radius: 5px;
 }
 
+.card-btn:hover {
+    cursor: pointer;
+}
+
 /* ||||||| fifth card */
 
 .card-icon {
@@ -157,10 +169,16 @@ i:hover {
     margin: 1rem 0;
     box-shadow: 10px 10px 20px #141414;
     border-radius: 5px;
+    display: flex;
+    flex-flow: column wrap;
 }
 
 .card-icon > .card-footer {
-    margin-left: 60%;
+    margin-left: auto;
+}
+
+.card-icon:hover {
+    cursor: pointer;
 }
 
 /* ||||||| sixth card */
@@ -171,7 +189,7 @@ i:hover {
     margin: 1rem 0;
     border-radius: 5px;
     box-shadow: 10px 10px 20px #141414;
-    height: 120px;
+    align-self: flex-start;
 }
 
 .card-img-txt > .crd-header {
@@ -187,4 +205,12 @@ i:hover {
     height: 91.8px;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
+}
+
+.card-img-txt > .card-footer {
+    margin-top: 1em;
+}
+
+.card-img-txt:hover {
+    cursor: pointer;
 }
