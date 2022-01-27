@@ -10,14 +10,20 @@
     --basic-color-shade: #c6c6c6d3;
 }
 
+.wrapper {
+    width: 80vw;
+    margin: auto;
+}
+
 .permanent-drawer {
     display: flex;
+    height: 22rem;
 }
 
 .nav-drawer {
     border: 1px solid black;
     padding: 0 0.5rem 1rem 0.5rem;
-    width: 30%;
+    min-width: 20%;
     display: flex;
     flex-flow: column wrap;
 }
@@ -35,9 +41,9 @@
 .nav-item {
     padding: 0.5rem;
     display: flex;
-    border: 1px solid black;
     border-radius: 5px;
     margin-bottom: 0.5rem;
+    align-items: center;
 }
 
 .nav-item:hover {
@@ -45,7 +51,7 @@
 }
 
 .fas {
-    padding-right: 0.5rem;
+    padding-right: 2rem;
 }
 
 .main-side {
@@ -53,7 +59,7 @@
     border-left: 1px;
     padding-bottom: 1rem;
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
 }
 
 .main-header {
@@ -65,4 +71,5 @@
 
 .main-content {
     padding: 0.5rem 0.5rem 0 0.5rem;
+    overflow-y: auto;
 }
