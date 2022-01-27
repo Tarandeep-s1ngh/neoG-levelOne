@@ -1,0 +1,76 @@
+:root {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 1rem;
+    box-sizing: border-box;
+    --primary-color: #20b2aa;
+    --primary-color-shade: #20b2abd8;
+    --accent-color: #ED5D40;
+    --accent-color-shade: #ed5d40d3;
+    --basic-color: #C6C6C6;
+    --basic-color-shade: #c6c6c6d3;
+}
+
+.wrapper {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 2rem;
+}
+
+.basic-chips {
+    display: flex;
+    flex-flow: column wrap;
+    max-width: 80vw;
+    padding: 0 0 1rem 1rem;
+    border: 1px solid black;
+    border-radius: 0.4rem;
+
+}
+
+.chip-set {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-left: 1rem;
+    align-items: center;
+}
+
+.chip-set > * {
+    padding: 5px 10px;
+    background-color: var(--basic-color);
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.chip1:hover {
+    background-color: var(--basic-color-shade);
+}
+
+.chip2:hover {
+    background-color: var(--basic-color-shade);
+}
+
+.chip3 {
+    background-color: var(--primary-color);
+}
+
+.chip3:hover {
+    background-color: var(--primary-color-shade);
+}
+
+.chip4 {
+    background-color: var(--accent-color);
+}
+
+.chip4:hover {
+    background-color: var(--accent-color-shade);
+}
+
+.fas {
+    padding-right: 7px;
+}
+
+.fas.fa-times-circle {
+    padding: 0 0 0 7px;
+}
