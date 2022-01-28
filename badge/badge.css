@@ -15,3 +15,80 @@
     --basic-color: #C6C6C6;
     --basic-color-shade: #c6c6c6d3;
 }
+
+.wrapper {
+    margin: 3rem 5rem;
+    font-weight: bold;
+}
+
+.badge-span {
+    display: block;
+    position: relative;
+}
+
+.txt-badge {
+    display: inline-block;
+    background-color: var(--accent-color);
+    padding: 0.25ex 0.70ex;
+    color: white;
+    font-size: 0.9rem;
+    border-radius: 50%;
+    position: absolute;
+    top: -1.5ex;
+    left: 20ex;
+}
+
+.txt-lrg-badge {
+    display: inline-block;
+    background-color: var(--accent-color);
+    padding-inline: 0.8ex;
+    color: white;
+    font-size: 1.3rem;
+    border-radius: 50%;
+    position: absolute;
+    top: -1.5ex;
+    left: 16ex;
+}
+
+.badge-button {
+    display: inline-block;
+    background-color: slateblue;
+    font-weight: bold;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: none;
+}
+
+.btn-badge {
+    display: inline-block;
+    background-color: var(--primary-color);
+    padding: 0.2ex 0.75ex;
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: -1.5ex;
+    left: 31ex;
+}
+
+.btn-tgl-badge {
+    display: inline-block;
+    background-color: var(--primary-color);
+    padding: 0.3ex 0.8ex;
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: -1.8ex;
+    left: 38ex;
+}
+
+.icon-badge {
+    display: inline-block;
+    background-color: var(--accent-color);
+    padding: 0.4ex 0.55ex;
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: -2ex;
+    left: 21ex;
+}
