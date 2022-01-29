@@ -39,3 +39,7 @@ li {
     text-align: center;
     color: var(--accent-color);
 }
+
+.main-heading a {
+    color: var(--primary-color);
+}
