@@ -16,11 +16,6 @@
     --black-shade-light: #585858c0;
 }
 
-a {
-    text-decoration: none;
-    color: var(--accent-color);
-}
-
 .wrapper {
     position: relative;
     background-color: var(--basic-color);
@@ -50,6 +45,8 @@ a {
 }
 
 .snackbar-label-cross a {
+    text-decoration: none;
+    color: var(--accent-color);
     padding: 0.2rem 0.5rem;
     border-radius: 5px;
     font-weight: bold;

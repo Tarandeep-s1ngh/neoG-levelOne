@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: 'Montserrat', sans-serif;
+    --primary-color: #20b2aa;
+    --primary-color-shade: #589eb960;
+    --accent-color: #ED5D40;
+    --accent-color-shade: #ed5d40d3;
+    --basic-color: #C6C6C6;
+    --basic-color-shade: #c6c6c6d3;
+    --black-shade: #242424d3;
+    --black-shade-light: #585858c0;
+}
+
+.wrapper {
+    background-color: var(--basic-color);
+    width: 600px;
+    height: 300px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ||| First Dialogue */
+
+.dialog-alert {
+    background-color: white;
+    height: fit-content;
+    flex-basis: 15rem;
+    padding: 0 1rem 1rem;
+    border-radius: 5px;
+}
+
+.dialog-btns {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.dialog-btns button{
+    border: none;
+    background-color: white;
+    color: var(--primary-color);
+    border-radius: 5px;
+    padding: 0.5rem 0.5rem;
+    font-weight: bold;
+}
+
+.dialog-btns button:hover {
+    background-color: var(--primary-color-shade);
+    cursor: pointer;
+}
+
+/* ||| Second Dialogue */
+
+.dialog-simple {
+    background-color: white;
+    height: fit-content;
+    flex-basis: 15rem;
+    padding: 0 1rem 1rem;
+    border-radius: 5px;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.dialog-item {
+    padding: 0.8rem;
+}
+
+.dialog-avatar {
+    padding: 0.5rem 0.8rem;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+}
