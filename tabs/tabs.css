@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: 'Montserrat', sans-serif;
+    --primary-color: #20b2aa;
+    --primary-color-shade: #589eb960;
+    --accent-color: #ED5D40;
+    --accent-color-shade: #ed5d40d3;
+    --basic-color: #C6C6C6;
+    --basic-color-shade: #c6c6c6d3;
+    --black-shade: #242424d3;
+    --black-shade-light: #585858c0;
+}
+
+/* ||| Tab One */
+
+.wrapper {
+    background-color: var(--basic-color);
+    width: 600px;
+    height: 300px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 1rem;
+}
+
+.tabs:hover {
+    background-color: var(--primary-color-shade);
+    cursor: pointer;
+}
+
+.tabs-txt {
+    padding: 0.5rem;
+}
+
+/* ||| Tab Two */
+
+.tabs-top-icon{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    padding: 1rem;
+}
+
+.tabs-top-icon:hover {
+    background-color: var(--primary-color-shade);
+    cursor: pointer;
+}
