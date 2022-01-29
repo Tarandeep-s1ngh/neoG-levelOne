@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: 'Montserrat', sans-serif;
+    --primary-color: #20b2aa;
+    --primary-color-shade: #2089b260;
+    --accent-color: #ED5D40;
+    --accent-color-shade: #ed5d40d3;
+    --basic-color: #C6C6C6;
+    --basic-color-shade: #c6c6c6d3;
+    --black-shade: #242424d3;
+    --black-shade-light: #585858c0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--accent-color);
+}
+
+.wrapper {
+    position: relative;
+    background-color: var(--basic-color);
+    width: 80vw;
+    height: 50vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.snackbar {
+    background-color: var(--black-shade);
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    margin: 0 1rem;
+    border-radius: 5px;
+    color: white;
+    position: absolute;
+    bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.snackbar-description {
+    padding-right: 2rem;
+}
+
+.snackbar-label-cross a {
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.snackbar-label-cross a:hover {
+    background-color: var(--black-shade-light);
+}
+
+.snackbar-label-cross i {
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+.snackbar-label-cross i:hover {
+    background-color: var(--black-shade-light);
+    cursor: pointer;
+}
