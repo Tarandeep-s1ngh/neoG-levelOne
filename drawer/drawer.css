@@ -26,7 +26,7 @@
 .nav-drawer {
     border: 1px solid black;
     padding: 0 0.5rem 1rem 0.5rem;
-    min-width: 20%;
+    width: 12rem;
     display: flex;
     flex-flow: column wrap;
 }
@@ -51,6 +51,7 @@
 
 .nav-item:hover {
     background-color: var(--primary-color-shade);
+    cursor: pointer;
 }
 
 .fas {
