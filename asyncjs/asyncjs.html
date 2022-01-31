@@ -92,22 +92,22 @@
             // }
 
             // my fetch
-            // const myFetch = (msg, decision) => {
-            //     let shouldResolve = decision.toLowerCase();
-            //     return new Promise((resolve, reject) => {
-            //         setTimeout(() => {
-            //             if(shouldResolve === "yes") {
-            //                 resolve(`Success: ${msg}`)
-            //             }
-            //             else if(shouldResolve === "no") {
-            //                 reject(`Error!: ${msg}`)
-            //             }
-            //             else {
-            //                 console.log(`Please give second arguement as "yes" or "no"`);
-            //             }
-            //         }, 2000)
-            //     })
-            // }
+            const myFetch = (msg, decision) => {
+                let shouldResolve = decision.toLowerCase();
+                return new Promise((resolve, reject) => {
+                    setTimeout(() => {
+                        if(shouldResolve === "yes") {
+                            resolve(`Success: ${msg}`)
+                        }
+                        else if(shouldResolve === "no") {
+                            reject(`Error!: ${msg}`)
+                        }
+                        else {
+                            console.log(`Please give second arguement as "yes" or "no"`);
+                        }
+                    }, 2000)
+                })
+            }
 
 
         //ex11:
@@ -160,6 +160,24 @@
             //         console.log(error);
             //     }
             // }
+
+            // Variation for catching both errors
+            // const syncCallsToServerWithAsync = async (msg1, msg2) => {
+            //     try {
+            //         const dataFromFetch = await myFetch(msg1, "no");
+            //     }
+            //     catch(error) {
+            //         console.log(error);
+            //     }
+            //     try {
+            //         const dataFromFetch2 = await myFetch(msg2, "no");
+            //         console.log(dataFromFetch, dataFromFetch2);
+            //     }
+            //     catch(error) {
+            //         console.log(error);
+            //     }
+            // }
+
 
 
         //parallel calls in async-await
