@@ -42,7 +42,7 @@
             // }
 
 
-        //ex5: 1.ACB 2.BAC 3. ACB
+        //ex5: 1.ACB 2.BAC 3.ACB
 
 
         //ex6:
@@ -66,6 +66,16 @@
             //         }
             //     }, 1000);
             // }
+
+            // Even shorter variation:
+
+            // const countDown = startTime => { 
+            //     let id = setInterval(() => { 
+            //         console.log(startTime--); 
+            //         if (startTime < 0) clearInterval(id) || console.log("bang bang");     
+            //     }, 1000); 
+            // };  
+            // countDown(4);
 
 
         // ex7: in react codeSandBox
@@ -185,6 +195,21 @@
             //     try {
             //         const dataFromFetch = await Promise.all([
             //         myFetch(msg1, "yes"),
+            //         myFetch(msg2, "yes")
+            //         ]);
+            //         console.log(dataFromFetch);
+            //     }
+            //     catch(error) {
+            //         console.log(error);
+            //     }
+            // }
+
+            // Variation for catching both error & success
+
+            // const syncCallsToServerWithAsyncParallel2 = async (msg1, msg2) => {
+            //     try {
+            //         const dataFromFetch = await Promise.allSettled([
+            //         myFetch(msg1, "no"),
             //         myFetch(msg2, "yes")
             //         ]);
             //         console.log(dataFromFetch);
