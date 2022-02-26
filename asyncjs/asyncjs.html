@@ -16,6 +16,7 @@
                 document.body.style.backgroundColor = red;
             });
 
+            <hr>
 
             ex2:
                 const strLength = (myName, cb) => {
@@ -24,6 +25,8 @@
                 }
 
                 const printName = (lengthOfName) => console.log(`OMG! my name is ${lengthOfName} char long!`);
+
+            <hr>
 
 
             ex3:
@@ -36,6 +39,7 @@
                 alive = () => console.log(`Yay! I am alive!`);
                 dead = () => console.log(`My will`);
 
+            <hr>
 
             ex4:
                 const delayIt = (msg, delay) => {
@@ -44,9 +48,11 @@
                     }, delay)
                 }
 
+            <hr>
 
             ex5: 1.ACB 2.BAC 3.ACB
 
+            <hr>
 
             ex6:
             6.1
@@ -80,17 +86,23 @@
                 };  
                 countDown(4);
 
+            <hr>
 
             ex7: in react codeSandBox
 
+            <hr>
+
             ex8: promises becasue code is easier to follow and avoids callback hell.
 
+            <hr>
 
             ex9:
                 Promise -> States= pending (undefined), fulfill (result) and reject (error)
 
                 callAPromise().then(successHandler).catch(rejectHandler)
             
+            <hr>
+
             ex10:
                 Tanay's fetch
                 function fakeFetch(msg, shouldReject) {
@@ -122,10 +134,12 @@
                     })
                 }
 
+            <hr>
 
             ex11:
                 myFetch("Taran", "yes");
 
+            <hr>
 
             ex12:
                 myFetch("taran", "no")
@@ -133,6 +147,7 @@
                     console.log(error);
                 })
 
+            <hr>
 
             ex13:
                 const getServerResponseLength = msg => {
@@ -141,6 +156,7 @@
                     .catch(error => console.log(error))
                 }
 
+            <hr>
 
             ex14:
                 const syncCallsToServer = (msg1, msg2) => {
@@ -150,6 +166,7 @@
                     .catch(error => console.log(error))
                 }
 
+            <hr>
 
             ex15:
                 const callMyFetch = async () => {
@@ -160,7 +177,8 @@
                         console.log(error); 
                     }
                 }
-            
+
+            <hr>
 
             ex:16:
                 const syncCallsToServerWithAsync = async (msg1, msg2) => {
@@ -191,7 +209,7 @@
                     }
                 }
 
-
+            <hr>
 
             parallel calls in async-await
                 const syncCallsToServerWithAsyncParallel = async (msg1, msg2) => {

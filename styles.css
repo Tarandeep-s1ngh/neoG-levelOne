@@ -35,6 +35,15 @@ li {
     padding: 0.5rem 0;
 }
 
+pre {
+    margin: 4rem;
+}
+
+hr {
+    margin-left: 2rem;
+    margin-right: 16rem;
+}
+
 .main-heading {
     text-align: center;
     color: var(--accent-color);
