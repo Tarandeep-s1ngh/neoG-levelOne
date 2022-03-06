@@ -45,7 +45,7 @@ arr.map(arrayToObj);
 
 const arraySum = (acc, curr) => acc + curr;
 
-arr.reduce(arraySum, 0);
+console.log(arr.reduce(arraySum, 0));
 
 
 // Q7) Can you write your own reduce using for loop?
@@ -62,6 +62,8 @@ Array.prototype.myReduce = function(callbackfn, initialValue) {
     }
     return accumulator;
 }
+
+console.log(arr.myReduce(arraySum, 0));
 
 
 // Q8) Given an array of integers:
@@ -393,6 +395,31 @@ const flatArray = (acc, curr) => [...acc, ...curr];
 
 console.log(arr9.reduce(flatArray));
 
+
+const arr99 = [
+  ['a', 'b', 'c'],
+  ['c', 'd', 'e'],
+  ['e', 'd', 'f'],
+  "abc"
+];
+
+const flatArray2 = (acc, curr) => typeof curr === "object" ? [...acc, ...curr] : [...acc, curr];
+
+console.log(arr99.reduce(flatArray2));
+
+
+const arr999 = [
+  ['a', ['b', ['c']]],
+  ['c', 'd', 'e'],
+  ['e', 'd', 'f'],
+  "abc"
+];
+
+const flatArray3 = (acc, curr) => typeof curr === "object" ? [...acc, ...curr] : [...acc, curr];
+
+console.log(arr999.reduce(flatArray3));
+
+
 // Q16) Count the occurrences of distinct elements in the given array.
 
 let count = 1;
@@ -400,3 +427,12 @@ let count = 1;
 const countOccurrence = (acc, curr) => curr in acc ? {...acc, [curr]: count + 1} : {...acc, [curr]: 1};
 
 console.log(arr9.reduce(flatArray).reduce(countOccurrence, {}));
+
+//OR
+
+const res = arr9.reduce(flatArray).reduce((acc, curr)=> ({
+  ...acc,
+  [curr] : acc[curr] ? acc[curr] + 1 : 1
+}), {});
+
+console.log(res);
