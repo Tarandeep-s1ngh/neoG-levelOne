@@ -48,7 +48,7 @@ const arraySum = (acc, curr) => acc + curr;
 console.log(arr.reduce(arraySum, 0));
 
 
-// Q7) Can you write your own reduce using for loop?
+// Q7) Can you write your own reduce using for loop? //Polyfill
 
 Array.prototype.myReduce = function(callbackfn, initialValue) {
     var accumulator = initialValue === undefined ? undefined : initialValue;
@@ -63,7 +63,22 @@ Array.prototype.myReduce = function(callbackfn, initialValue) {
     return accumulator;
 }
 
-console.log(arr.myReduce(arraySum, 0));
+//OR
+
+// Array.prototype.myReduce = function(callbackfn, initialValue) {
+//   var accumulator = initialValue;
+//   for(var i = 0; i < this.length; i++) {
+//       if(accumulator !== undefined) {
+//           accumulator = callbackfn(accumulator, this[i], i, this);
+//       }
+//       else {
+//           accumulator = this[i];
+//       }
+//   }
+//   return accumulator;
+// }
+
+// console.log(arr.myReduce(arraySum, 0));
 
 
 // Q8) Given an array of integers:
@@ -436,3 +451,39 @@ const res = arr9.reduce(flatArray).reduce((acc, curr)=> ({
 }), {});
 
 console.log(res);
+
+
+
+
+
+
+
+
+
+
+// JS Trick Questions
+
+// console.log(('b'+'a' + + 'a' + 'a').toLowerCase())
+
+// console.log(1<2<3)
+
+// console.log(3>2>1)
+
+// console.log(0.1 + 0.2 == 0.3)
+
+// const isTrue = true == [];
+// const isFalse = true == ![];
+
+// console.log(isTrue + isFalse);
+
+// console.log(true == false);
+
+// console.log(typeof Math);
+
+// console.log(!!"true" == !!"false");
+
+// function Switch(i) { 
+//   return arguments[++i] 
+// }
+
+// console.log(Switch(1, "a", "b"));
